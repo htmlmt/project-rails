@@ -11,11 +11,11 @@ class TeachersController < ApplicationController
 
   end
   def create
-    @teacher = Teacher.new({:name => params[:name], :class_id=>params[:class_id]})
+    @teacher = Teacher.new({:name => params[:name]})
     
     if @teacher.save
       # Successful saves:
-      redirect_to(:)
+      redirect_to(:teachers)
       
     else
       # The error is:
@@ -29,7 +29,7 @@ class TeachersController < ApplicationController
   def update
     @teacher = Teacher.find(params[:id])
     
-    @teacher.update_attributes({:name => params[:name], :class_id=>params[:class_id]})
+    @teacher.update_attributes({:name => params[:name]})
     
     redirect_to(article_path(@teacher.id))
   end
@@ -39,6 +39,6 @@ class TeachersController < ApplicationController
     
     @teacher.delete
     
-    redirect_to(:)
+    redirect_to(:teachers)
   end
 end
