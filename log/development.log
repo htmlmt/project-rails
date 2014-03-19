@@ -6,3 +6,33 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (226.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (20.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTeachers (20140319204813)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (85.9ms)[0m  [1mCREATE TABLE "teachers" ("id" serial primary key, "name" character varying(255), "class_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319204813')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateKlasses (20140319204946)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "klasses" ("id" serial primary key, "name" character varying(255), "student_id" integer, "teacher_id" integer, "semester_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319204946')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateStudents (20140319205015)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "students" ("id" serial primary key, "name" character varying(255), "class_id" integer, "grade" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319205015')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSemesters (20140319205036)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "semesters" ("id" serial primary key, "year" integer, "term" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319205036')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to JoinTableForKlassesStudents (20140319210557)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "klasses_students" ("klass_id" integer, "student_id" integer) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319210557')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
