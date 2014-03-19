@@ -36,3 +36,32 @@ Migrating to JoinTableForKlassesStudents (20140319210557)
   [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319210557')
   [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
   [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTeachers (20140319204813)
+Migrating to CreateKlasses (20140319204946)
+Migrating to CreateStudents (20140319205015)
+Migrating to CreateSemesters (20140319205036)
+Migrating to JoinTableForKlassesStudents (20140319210557)
+Migrating to AddGradecolumnToKlasses (20140319230103)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (41.1ms)[0m  [1mALTER TABLE "klasses" ADD COLUMN "grade" integer[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319230103')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTeachers (20140319204813)
+Migrating to CreateKlasses (20140319204946)
+Migrating to CreateStudents (20140319205015)
+Migrating to CreateSemesters (20140319205036)
+Migrating to JoinTableForKlassesStudents (20140319210557)
+Migrating to AddGradecolumnToKlasses (20140319230103)
+Migrating to RemoveGradeFromStudents (20140319230511)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (103.3ms)[0m  [1mALTER TABLE "students" DROP "grade"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319230511')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
