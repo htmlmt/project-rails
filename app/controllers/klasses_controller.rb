@@ -14,15 +14,14 @@ class KlassesController < ApplicationController
     @teachers = Teacher.all
     
     Klass.create({
-      :name => params[:name]
+      :name => params[:name], 
+      :teacher_id => Teacher.find_by_name(params[:teacher]).id
     })
     
     Semester.create({
       :term => params[:term],
       :year => params[:year]
     })
-    
-    Teacher.update_attribute({:class_id => params[:teacher]})
     
     redirect_to(:classes)
   end
