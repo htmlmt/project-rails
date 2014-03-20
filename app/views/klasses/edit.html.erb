@@ -1,6 +1,6 @@
 <h1>Edit Class</h1>
 
-<form method="post" action="<%= update_class_path(@klass.id) %>">
+<form method="post" action="<%= classes_path(@klass.id) %>">
   <label>Name</label>
   <input type="text" name="name" value="<%= @klass.name %>">
   

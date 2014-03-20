@@ -13,15 +13,18 @@ class KlassesController < ApplicationController
   def create
     @teachers = Teacher.all
     
-    Klass.create({
-      :name => params[:name], 
-      :teacher_id => Teacher.find_by_name(params[:teacher]).id
-    })
+    # Klass.create({
+    #   :name => params[:klass], 
+    #   :teacher_id => Teacher.find_by_name(params[:teacher]).id
+    # })
+    # 
+    # Semester.create({
+    #   :term => params[:klass],
+    #   :year => params[:year]
+    # })
     
-    Semester.create({
-      :term => params[:term],
-      :year => params[:year]
-    })
+    Klass.create({params[:klass]})
+    Semester.create({params[:klass]})
     
     redirect_to(:classes)
   end
@@ -33,8 +36,15 @@ class KlassesController < ApplicationController
   def delete
     klass = Klass.find(params[:id])
     
-    klass.delete
+    klass.destroy
     
     redirect_to(:classes)
   end
+  
+  # def update
+  #   @class = Klass.update_attributes[:]
+  #   
+  #   redirect_to("/")
+  # end
+  
 end
