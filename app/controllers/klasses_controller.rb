@@ -18,7 +18,7 @@ class KlassesController < ApplicationController
     })
     
     Semester.create({
-      :term => params[:term]
+      :term => params[:term],
       :year => params[:year]
     })
     

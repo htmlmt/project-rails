@@ -5,7 +5,8 @@
 	
 	<label>Teacher:</label> 
 		<% @teachers.each do |i|%>
-			<option name="teacher" value="<%= i.id %>"><%= i.name %></option>
+		  <select name="name">
+			  <option value="<%= i.id %>"><%= i.name %></option>
 			</select>
 		<% end %>
 
