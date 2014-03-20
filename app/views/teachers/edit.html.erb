@@ -1,7 +1,2 @@
 <h1>Update Teacher Name & Classes</h1>
-
-<form method="post" action="<%= update_teacher(@teacher.id) %>">
-  <label>Title</label>
-  <input type="text" name="name" value="<%= @teacher.name %>">
-  <input type="submit" value="Update">
-</form>
+ <%= render :partial => “form” %>

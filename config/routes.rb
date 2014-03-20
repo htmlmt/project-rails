@@ -2,7 +2,8 @@ ProjectRails::Application.routes.draw do
   get "/" => 'pages#home', :as => :home
   
   get "students" => 'students#index', :as => :students
-  get "students/:id" => 'students#show', :as => :student
+  get "students/:id" => 'students#show', :as => :studentrequire "../../../sites/project-rails/config/routes"
+  
   get "students/new" => 'students#new', :as => :new_student
   post "students" => 'students#create', :as => :create_student
   get "students/:id/edit" => 'students#edit', :as => :edit_student
