@@ -1,0 +1,36 @@
+<% @klasses.semester.each do |sem| %>
+	<p>
+		<ul>
+		  <li><%= sem.year %></li>
+			<ul>
+				<li><%= sem.term %></li>
+					<% if sem.term.where(:term => "Fall") %>
+					Fall classes: 
+					<ul>
+						<li>
+							<%=
+							link_to(
+							@klasses.where(:semester_id => sem.id).where(:term => "Fall").name, 
+							@class_path(@klasses.where(:semester_id => sem.id).where(:term => "Fall").id)
+							)
+							%>
+						</li>
+				  </ul>
+					<elsif>
+					Spring classes: 
+					<ul>
+						<li>
+							<%=
+							link_to(
+							@klasses.where(:semester_id => sem.id).where(:term => "Spring").name, 
+							@class_path(@klasses.where(:semester_id => sem.id).where(:term => "Spring").id)
+							)
+							%>
+						</li>
+					</ul>
+					<% end %>
+			</ul>
+		</ul>
+	</p>
+<% end %>
+
