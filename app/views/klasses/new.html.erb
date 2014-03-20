@@ -1,6 +1,6 @@
 <h1>Register for Class</h1>
 
-<form method="post" action="<%= :create_class %>">
+<form method="post" action="/<%= :create_class %>">
 	<% params[:number].times do |i| %>
   <label>Name of student:</label>
   <input type="text" name="<%= '#{i}student_name' %>">
