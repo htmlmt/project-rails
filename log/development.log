@@ -3801,3 +3801,4 @@ ActionView::MissingTemplate (Missing template klasses/new, application/new with 
 
 
   Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+  
