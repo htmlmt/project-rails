@@ -1,0 +1,27 @@
+<h1>Register for Class</h1>
+
+<form method="post" action="/<%= :create_class %>">
+	<% params[:number].times do |i| %>
+  <label>Name of student:</label>
+  <input type="text" name="<%= '#{i}student_name' %>">
+	<% end %>
+	<% params[:number].times do |i| %>
+  <label>Grade (1-100):</label>
+  <input type="integer" name="<%= '#{i}student_grade' %>">
+
+	<% 
+	@grades << '#{i}student_grade'
+	@names << '#{i}student_name'
+	%>
+	
+	<% end %>
+  <label>Name of class:</label>
+  <input type="text" name="class_name">
+  <label>Name of teacher:</label>
+  <input type="text" name="teacher_name">
+  <label>Semester (Spring or Fall):</label>
+	<input type="text" name="term">
+	<label>Year:</label>
+	<input type="integer" name="year">
+  <input type="submit">
+</form>

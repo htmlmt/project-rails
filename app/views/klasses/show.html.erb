@@ -1,0 +1,10 @@
+<h1>Class Info</h1>
+
+<% @klass.each do |l| %>
+	<p>
+	Class name: <%= l.name %> Semester: <%= l.semester.term %> Year: <%= l.semester.year %>
+	</p>
+<% end %>
+
+<%= link_to("Edit", edit_class_path(@klass.id)) %> | 
+<%= link_to("Delete", delete_class_path(@klass.id), :method => "delete") %>

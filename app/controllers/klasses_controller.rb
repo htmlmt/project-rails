@@ -1,8 +1,6 @@
 class KlassesController < ApplicationController
   def index
     @klasses = Klass.all
-    @spring = Klass.semester.find_by_term("Spring")
-    @fall = Klass.semester.find_by_term("Fall")
   end
   
   def show
