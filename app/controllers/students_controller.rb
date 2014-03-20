@@ -12,10 +12,16 @@ class StudentsController < ApplicationController
   end
   
   def new
-    
+    @klasses = Klass.all
   end
+  
   def create
+    @klass = Klass.find(params[:klass_name])
     @student = Student.new({:name => params[:name]})
+    Klasses_students.create({
+      :klass_id => @klass.id
+      :student_id => @student.id
+    })
     
     if @student.save
       # Successful saves:
@@ -26,6 +32,7 @@ class StudentsController < ApplicationController
       render "new"
     end
   end
+  
   def edit
     @student = Student.find(params[:id])
   end
@@ -40,7 +47,7 @@ class StudentsController < ApplicationController
     redirect_to(student_path(@student.id))
   end
   
-  def delete
+  def destroy
     @student = Student.find
     
     @student.delete

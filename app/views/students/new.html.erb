@@ -5,9 +5,30 @@
     <p><%= error_msg %></p>
   <% end %>
 <% end %>
+
+<%= form_for @student do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
   
 <form method="post" action="/students">
   <label>Name</label>
   <input type="text" name="name">
+  <% if @klasses %>
+  <p>Classes enrolled in: 
+	  <%= @klasses.each {|klass| klass.name} %>
+  </p>
+  <% end %>
+  <select>
+	<% @klasses.each do |klass| %>
+    <option name="klass_name" value="<% klass.id %>"><%= klass.name %></option>
+	<% end %>
+  </select>
   <input type="submit">
 </form>
