@@ -11,16 +11,18 @@ class KlassesController < ApplicationController
   end
   
   def create
+    @teachers = Teacher.all
     
+    Klass.create({
+      :name => params[:name]
+    })
     
-    params[:number].times do 
-      Klass.create({:name => params[:name]})
+    Semester.create({
+      :term => params[:term]
+      :year => params[:year]
+    })
     
-      @grades = []
-      @names = []
-    
-      
-    end
+    Teacher.update_attribute({:class_id => params[:teacher]})
     
     redirect_to(:classes)
   end
