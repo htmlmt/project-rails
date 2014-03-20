@@ -31,7 +31,7 @@ class KlassesController < ApplicationController
     @klass = Klass.find(params[:id])
   end
   
-  def delete
+  def destroy
     klass = Klass.find(params[:id])
     
     klass.delete

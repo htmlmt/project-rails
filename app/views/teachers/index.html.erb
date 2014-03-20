@@ -1,0 +1,3 @@
+<% @teachers.each do |teacher| %>
+<p><%= link_to(teacher.name, teacher_path(teacher.id)) %></p>
+<% end %>

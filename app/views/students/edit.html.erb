@@ -1,6 +1,6 @@
 <h1>Update Student Name</h1>
 
-<form method="post" action="<%= update_student(@student.id) %>">
+<form method="post" action="<%= students_path(@student.id) %>">
   <label>Name</label>
   <input type="text" name="name" value="<%= @student.name %>">
   <input type="submit" value="Update">

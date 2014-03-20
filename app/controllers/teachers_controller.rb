@@ -1,10 +1,14 @@
 class TeachersController < ApplicationController
   def index
     @teachers = Teacher.all
+    
+    unless @teachers.present?
+      redirect_to :home
+    end
   end
   
   def show
-    @teacher = Article.find(params[:id])
+    @teacher = Teacher.find(params[:id])
   end
   
   def new
@@ -31,10 +35,10 @@ class TeachersController < ApplicationController
     
     @teacher.update_attributes({:name => params[:name]})
     
-    redirect_to(article_path(@teacher.id))
+    redirect_to(teacher_path(@teacher.id))
   end
   
-  def delete
+  def destroy
     @teacher = Teacher.find(params[:id])
     
     @teacher.delete
