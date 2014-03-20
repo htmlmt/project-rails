@@ -65,3 +65,3218 @@ Migrating to RemoveGradeFromStudents (20140319230511)
   [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140319230511')
   [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
   [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-03-20 09:41:38 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (33ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:42:33 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (uninitialized constant PagesController):
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__1157255676861149646__call__3047384393222550282__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:43:42 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Compiled application.css  (0ms)  (pid 5564)
+Compiled jquery.js  (2ms)  (pid 5564)
+Compiled jquery_ujs.js  (0ms)  (pid 5564)
+Compiled application.js  (75ms)  (pid 5564)
+Completed 200 OK in 151.1ms (Views: 150.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 09:43:43 -0500
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 09:43:43 -0500
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 09:43:43 -0500
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 09:43:43 -0500
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/classes/new" for 127.0.0.1 at 2014-03-20 09:43:58 -0500
+
+ActionController::RoutingError (uninitialized constant ClassesController):
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3750271344743440458__call__3443250344633508977__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/classes" for 127.0.0.1 at 2014-03-20 09:44:02 -0500
+
+ActionController::RoutingError (uninitialized constant ClassesController):
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3750271344743440458__call__3443250344633508977__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 09:44:04 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"new"}
+Completed 500 Internal Server Error in 0.9ms
+
+NameError (uninitialized constant TeachersController::Article):
+  app/controllers/teachers_controller.rb:7:in `show'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:44:34 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4.4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 09:44:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 09:44:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 09:44:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 09:44:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:44:36 -0500
+
+SyntaxError (/Users/mikejtodd/Sites/project-rails/app/controllers/students_controller.rb:43: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3750271344743440458__call__3443250344633508977__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
+
+
+Started GET "/classes" for 127.0.0.1 at 2014-03-20 09:45:10 -0500
+Processing by KlassesController#index as HTML
+  [1m[36mKlass Load (69.9ms)[0m  [1mSELECT "klasses".* FROM "klasses" [0m
+Completed 500 Internal Server Error in 527.6ms
+
+NoMethodError (undefined method `semester' for #<Class:0x007fc823fa5468>):
+  app/controllers/klasses_controller.rb:4:in `index'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:45:18 -0500
+
+SyntaxError (/Users/mikejtodd/Sites/project-rails/app/controllers/students_controller.rb:43: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3750271344743440458__call__3443250344633508977__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:46:09 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fc82735f1c8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:46:15 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 24.1ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__2067190504065561113_70248814265720'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:48:16 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fc823f5d438>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:48:19 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__2067190504065561113_70248814265720'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:48:48 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37.8ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 09:48:49 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 09:48:49 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 09:48:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 09:48:49 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:48:50 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fcd8a33b5d0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:48:55 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"new"}
+  Rendered students/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 5.9ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @student.name %></h1>
+    2: 
+    3: <%= link_to("Edit", edit_student_path(@student.id)) %> | 
+    4: <%= link_to("Delete", delete_student_path(@student.id), :method => "delete") %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb__3075803637249456227_70260381943960'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:50:14 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fcd8a447690>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:50:51 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f8214939070>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:51:00 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"new"}
+  Rendered students/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 6.3ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @student.name %></h1>
+    2: 
+    3: <%= link_to("Edit", edit_student_path(@student.id)) %> | 
+    4: <%= link_to("Delete", delete_student_path(@student.id), :method => "delete") %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb__98325434765337660_70098335384920'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:53:38 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f8214f722e8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:53:41 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3.0ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__3907102806359074371_70098334712960'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:53:51 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f82149483e0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:53:53 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__3907102806359074371_70098334712960'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:54:02 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38.8ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 09:54:02 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 09:54:02 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 09:54:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 09:54:02 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:54:03 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fbe46c96268>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:54:06 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 8.1ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2678994537819822004_70227602081840'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:54:08 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2678994537819822004_70227602081840'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 09:56:42 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39.1ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 09:56:43 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 09:56:43 -0500
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 09:56:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 09:56:43 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:56:43 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fa06ad59780>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:56:51 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 5.5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___987046698728021685_70163482177340'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:58:11 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fa06a9c1d98>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:58:13 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___987046698728021685_70163482177340'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:04 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fee1ae62fe8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:06 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 5.8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:07 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:08 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 09:59:18 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"new"}
+  Rendered students/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2.4ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @student.name %></h1>
+    2: 
+    3: <%= link_to("Edit", edit_student_path(@student.id)) %> | 
+    4: <%= link_to("Delete", delete_student_path(@student.id), :method => "delete") %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb__1479701436943098942_70330314538060'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:20 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1.8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 09:59:24 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:00:34 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fee1aeb0090>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:00:37 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2.4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:00:44 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:01:08 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fee1acf90f8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:01:10 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__4562147015061470203_70330314928740'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:03:52 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f860931a240>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:03:56 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 5.9ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___1745791834342619779_70106841391680'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/classes/new" for 127.0.0.1 at 2014-03-20 10:04:04 -0500
+Processing by KlassesController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mKlass Load (81.9ms)[0m  [1mSELECT "klasses".* FROM "klasses" WHERE "klasses"."id" = $1 LIMIT 1[0m  [["id", "new"]]
+Completed 404 Not Found in 86.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Klass with id=new):
+  app/controllers/klasses_controller.rb:9:in `show'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/classes" for 127.0.0.1 at 2014-03-20 10:04:07 -0500
+Processing by KlassesController#index as HTML
+  [1m[35mKlass Load (0.4ms)[0m  SELECT "klasses".* FROM "klasses" 
+Completed 500 Internal Server Error in 1.4ms
+
+NoMethodError (undefined method `semester' for #<Class:0x007f860ab770e0>):
+  app/controllers/klasses_controller.rb:4:in `index'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:04:09 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"new"}
+Completed 500 Internal Server Error in 0.7ms
+
+NameError (uninitialized constant TeachersController::Article):
+  app/controllers/teachers_controller.rb:7:in `show'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:04:15 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (77.1ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92.2ms (Views: 11.0ms | ActiveRecord: 79.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:04:16 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:16 -0500
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:16 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:04:18 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.5ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:04:19 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:19 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:04:23 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.7ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:04:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:04:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:05:17 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.6ms (Views: 3.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:05:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:05:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:05:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:05:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:05:20 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "new"]]
+Completed 404 Not Found in 1.6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Teacher with id=new):
+  app/controllers/teachers_controller.rb:7:in `show'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:05:26 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1  [["id", "new"]]
+Completed 404 Not Found in 1.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Teacher with id=new):
+  app/controllers/teachers_controller.rb:7:in `show'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:06:00 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93.0ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:06:00 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:06:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:06:00 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:06:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:06:27 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f860ab4eaa0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:06:31 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___1745791834342619779_70106841391680'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:06:32 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___1745791834342619779_70106841391680'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:06:54 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+Completed 500 Internal Server Error in 25.3ms
+
+ActionView::MissingTemplate (Missing template teachers/home, application/home with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/mikejtodd/Sites/project-rails/app/views"
+):
+  app/controllers/teachers_controller.rb:6:in `index'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT "teachers".* FROM "teachers" 
+Redirected to http://localhost:3000/
+Completed 302 Found in 3.6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4.7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:07:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:07:42 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f860a8cc4d0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:08:59 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3.8ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:08:59 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:08:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:08:59 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:08:59 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:09:02 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5.2ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:09:02 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4.7ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:09:03 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:09:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:09:03 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:09:03 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:10:30 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 7.0ms
+
+ActionView::Template::Error (undefined method `redirect_to' for #<#<Class:0x007f860ac678b0>:0x007f860b205830>):
+    1: <% unless @students.present? %>
+    2: <% redirect_to :home %>
+    3: <% end %>
+    4: <% @students.each do |student| %>
+    5: <p><%= link_to(student.name, student_path(student.id)) %></p>
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1745791834342619779_70106844574760'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:10:55 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (80.1ms)
+Completed 500 Internal Server Error in 81.3ms
+
+ActionView::Template::Error (Missing partial students/home, application/home with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/mikejtodd/Sites/project-rails/app/views"
+):
+    1: <% unless @students.present? %>
+    2: <% render "home" %>
+    3: <% end %>
+    4: <% @students.each do |student| %>
+    5: <p><%= link_to(student.name, student_path(student.id)) %></p>
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___1745791834342619779_70106841324560'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:13:27 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f860a8ad7b0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:13:29 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2.8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___1745791834342619779_70106841501480'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.7ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:13:30 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.1ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___1745791834342619779_70106841501480'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:13:39 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007ff95c850400>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:14:17 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007ff95ce6e008>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:14:19 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 6.4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__86043973611204887_70354488439980'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:14:20 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__86043973611204887_70354488439980'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.4ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:14:27 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fe28de37ca0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:14:29 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 5.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb__3915874774721462888_70305508682080'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:17:09 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007ff3ab223e08>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:17:46 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fe7e167db78>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:17:47 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 5.9ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2509069537583080578_70316948051380'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:15 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fe7e1f2bf18>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:16 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2509069537583080578_70316948051380'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:16 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2509069537583080578_70316948051380'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:19 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2509069537583080578_70316948051380'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:21 -0500
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @students.each do |student| %>
+    2: <p><%= link_to(student.name, student_path(student.id)) %></p>
+    3: <% end %>
+  app/views/students/index.html.erb:1:in `_app_views_students_index_html_erb___2509069537583080578_70316948051380'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:18:35 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 115.6ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:36 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:36 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:36 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:18:37 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f9a0d1223f8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5.0ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3.7ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:40 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:18:41 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT "teachers".* FROM "teachers" 
+Redirected to http://localhost:3000/
+Completed 302 Found in 1.0ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:18:41 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3.6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:42 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:42 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:42 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/classes" for 127.0.0.1 at 2014-03-20 10:18:42 -0500
+Processing by KlassesController#index as HTML
+  [1m[36mKlass Load (0.3ms)[0m  [1mSELECT "klasses".* FROM "klasses" [0m
+Completed 500 Internal Server Error in 3.5ms
+
+NoMethodError (undefined method `semester' for #<Class:0x007f9a0c96ff98>):
+  app/controllers/klasses_controller.rb:4:in `index'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/classes/new" for 127.0.0.1 at 2014-03-20 10:18:46 -0500
+Processing by KlassesController#new as HTML
+Completed 500 Internal Server Error in 25.6ms
+
+ActionView::MissingTemplate (Missing template klasses/new, application/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/mikejtodd/Sites/project-rails/app/views"
+):
+  actionpack (3.2.17) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.17) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (3.2.17) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.17) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.17) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.17) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.17) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.17) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.17) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.17) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.17) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.17) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.17) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.17) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.17) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.17) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.17) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.17) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.17) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:414:in `_run__3124179404911504696__process_action__688379439090731688__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.17) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.17) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.17) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.17) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.17) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.17) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.17) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.17) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.17) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3315191125745120722__call__3427921923288593628__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:18:49 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4.8ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:18:52 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.1ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:52 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:52 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:52 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:18:56 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:56 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:18:58 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.6ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:18:58 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:58 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:58 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:18:58 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:19:01 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16.4ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:19:01 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:01 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:01 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:01 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:19:09 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2.8ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:19:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:19:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:19:19 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for StudentsController):
+  actionpack (3.2.17) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.17) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3315191125745120722__call__3427921923288593628__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.8ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:20:16 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f9a0d129810>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:20:49 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered students/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3.7ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @student.name %></h1>
+    2: 
+    3: <%= link_to("Edit", edit_student_path(@student.id)) %> | 
+    4: <%= link_to("Delete", delete_student_path(@student.id), :method => "delete") %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb___1498470653495356736_70149811922160'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:23:57 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007fa4d70e9768>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:24:05 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered students/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 6.6ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @student.name %></h1>
+    2: 
+    3: <%= link_to("Edit", edit_student_path(@student.id)) %> | 
+    4: <%= link_to("Delete", delete_student_path(@student.id), :method => "delete") %>
+  app/views/students/show.html.erb:1:in `_app_views_students_show_html_erb__642678297424708592_70172980680260'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:26:28 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38.0ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:26:28 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:28 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:28 -0500
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:26:29 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3.9ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:26:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/teachers" for 127.0.0.1 at 2014-03-20 10:26:32 -0500
+Processing by TeachersController#create as HTML
+  Parameters: {"name"=>"Sumeet Jain"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (189.9ms)[0m  INSERT INTO "teachers" ("class_id", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["class_id", nil], ["created_at", Thu, 20 Mar 2014 15:26:32 UTC +00:00], ["name", "Sumeet Jain"], ["updated_at", Thu, 20 Mar 2014 15:26:32 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/teachers
+Completed 302 Found in 228.2ms (ActiveRecord: 205.2ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:26:33 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4.7ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:26:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2014-03-20 10:26:36 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.8ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered teachers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 69.7ms (Views: 66.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:26:37 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:26:37 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:28:44 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f8a970f03d8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:28:46 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12.2ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:28:47 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:28:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:28:47 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:28:47 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:28:56 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for StudentsController):
+  actionpack (3.2.17) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.17) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__2336755393932514193__call__3592177951110909518__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:31:01 -0500
+
+ActionController::RoutingError (undefined local variable or method `klasses' for #<Class:0x007f8a970934f8>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:31:05 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for StudentsController):
+  actionpack (3.2.17) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.17) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__2336755393932514193__call__3592177951110909518__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:32:14 -0500
+
+AbstractController::ActionNotFound (The action 'create' could not be found for StudentsController):
+  actionpack (3.2.17) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.17) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.17) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.17) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__2336755393932514193__call__3592177951110909518__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:38:06 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined method `has_many_and_belongs_to' for #<Class:0x007f9c531613d0>):
+  app/models/student.rb:4:in `<class:Student>'
+  app/models/student.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:39:04 -0500
+Connecting to database specified by database.yml
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (89.5ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 148.9ms (Views: 21.1ms | ActiveRecord: 94.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:04 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:04 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:04 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2014-03-20 10:39:07 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3.8ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:07 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:07 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"name"=>"Barney Rubble"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (22.1ms)[0m  [1mINSERT INTO "students" ("class_id", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["class_id", nil], ["created_at", Thu, 20 Mar 2014 15:39:10 UTC +00:00], ["name", "Barney Rubble"], ["updated_at", Thu, 20 Mar 2014 15:39:10 UTC +00:00]]
+  [1m[35m (16.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/students
+Completed 302 Found in 46.5ms (ActiveRecord: 38.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  Rendered students/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.7ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:10 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:39:12 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.7ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6.2ms (Views: 3.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:12 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:12 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:39:17 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31.3ms (Views: 4.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-03-20 10:39:20 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3.4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:20 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:20 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:20 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:20 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/teachers" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Processing by TeachersController#create as HTML
+  Parameters: {"name"=>"Sumeet Jain"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "teachers" ("class_id", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["class_id", nil], ["created_at", Thu, 20 Mar 2014 15:39:23 UTC +00:00], ["name", "Sumeet Jain"], ["updated_at", Thu, 20 Mar 2014 15:39:23 UTC +00:00]]
+  [1m[35m (41.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/teachers
+Completed 302 Found in 45.4ms (ActiveRecord: 41.9ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.8ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:23 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:39:26 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3.5ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2014-03-20 10:39:35 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.7ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered teachers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9.0ms (Views: 6.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:36 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:39:40 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4.0ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:39:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:39:40 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:40:14 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/2" for 127.0.0.1 at 2014-03-20 10:40:17 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered teachers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5.5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/teachers/2" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Processing by TeachersController#delete as HTML
+  Parameters: {"authenticity_token"=>"xEK9MJVIjKXczAakiH9K/DVD8yQHqUivqMzmwz/Etac=", "id"=>"2"}
+  [1m[36mTeacher Load (0.6ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mSQL (16.2ms)[0m  DELETE FROM "teachers" WHERE "teachers"."id" = 2
+Redirected to http://localhost:3000/teachers
+Completed 302 Found in 110.8ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  Rendered teachers/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4.4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:40:23 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6.2ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:23 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:40:51 -0500
+Connecting to database specified by database.yml
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  Rendered students/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63.8ms (Views: 20.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:52 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:52 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:52 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:40:53 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (1.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7.4ms (Views: 4.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:40:53 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:53 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:40:53 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:40:54 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 12.7ms
+
+ActionView::Template::Error (undefined method `update_student' for #<#<Class:0x007ff481852b68>:0x007ff481a37550>):
+    1: <h1>Update Student Name</h1>
+    2: 
+    3: <form method="post" action="<%= update_student(@student.id) %>">
+    4:   <label>Name</label>
+    5:   <input type="text" name="name" value="<%= @student.name %>">
+    6:   <input type="submit" value="Update">
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__3519769968864995387_70344061858040'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:41:53 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 14.8ms
+
+ActionView::Template::Error (undefined method `update_student' for #<#<Class:0x007ff481d73570>:0x007ff481d7d110>):
+    1: <h1>Update Student Name</h1>
+    2: 
+    3: <form method="post" action="<%= update_student(@student.id) %>">
+    4:   <label>Name</label>
+    5:   <input type="text" name="name" value="<%= @student.name %>">
+    6:   <input type="submit" value="Update">
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__3519769968864995387_70344061858040'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:41:55 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 6.8ms
+
+ActionView::Template::Error (undefined method `update_student' for #<#<Class:0x007ff481d73570>:0x007ff481ddddd0>):
+    1: <h1>Update Student Name</h1>
+    2: 
+    3: <form method="post" action="<%= update_student(@student.id) %>">
+    4:   <label>Name</label>
+    5:   <input type="text" name="name" value="<%= @student.name %>">
+    6:   <input type="submit" value="Update">
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__3519769968864995387_70344061858040'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:42:05 -0500
+Connecting to database specified by database.yml
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 61.9ms
+
+ActionView::Template::Error (undefined method `update_student' for #<#<Class:0x007ff99dd051f8>:0x007ff99db975a0>):
+    1: <h1>Update Student Name</h1>
+    2: 
+    3: <form method="post" action="<%= update_student(@student.id) %>">
+    4:   <label>Name</label>
+    5:   <input type="text" name="name" value="<%= @student.name %>">
+    6:   <input type="submit" value="Update">
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__1996780952330398083_70355035909080'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:43:03 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29.2ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:43:03 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:43:03 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:43:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:43:03 -0500
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 10:45:06 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36.9ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:45:07 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:07 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:07 -0500
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:45:09 -0500
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 370.3ms (Views: 3.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:45:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:10 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:45:11 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (1.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6.5ms (Views: 3.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:45:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:45:12 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5.2ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:45:12 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:12 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2014-03-20 10:45:22 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" 
+  Rendered students/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4.0ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:45:22 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:22 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:22 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:45:22 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:46:26 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4.3ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:46:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2014-03-20 10:46:27 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered students/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5.5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:46:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/students/1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Processing by StudentsController#update as HTML
+  Parameters: {"name"=>"Barne", "id"=>"1"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "students" SET "name" = 'Barne', "updated_at" = '2014-03-20 15:46:31.613295' WHERE "students"."id" = 1[0m
+  [1m[35m (15.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 24.9ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4.4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:46:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-03-20 10:47:07 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT "teachers".* FROM "teachers" 
+  Rendered teachers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11.6ms (Views: 4.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:07 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:47:07 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2014-03-20 10:47:08 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.6ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered teachers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5.5ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:47:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/teachers/1/edit" for 127.0.0.1 at 2014-03-20 10:47:09 -0500
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered teachers/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4.9ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:47:10 -0500
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:10 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/teachers/1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Processing by TeachersController#update as HTML
+  Parameters: {"name"=>"Sumeet", "id"=>"1"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mTeacher Load (0.4ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "teachers" SET "name" = 'Sumeet', "updated_at" = '2014-03-20 15:47:19.734569' WHERE "teachers"."id" = 1[0m
+  [1m[35m (15.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/teachers/1
+Completed 302 Found in 20.6ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered teachers/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4.5ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 10:47:19 -0500
+Served asset /application.js - 304 Not Modified (0ms)

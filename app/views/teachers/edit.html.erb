@@ -1,6 +1,6 @@
-<h1>Update Teacher Name & Classes</h1>
+<h1>Update Teacher Name</h1>
 
-<form method="post" action="<%= update_teacher(@teacher.id) %>">
+<form method="post" action="<%= update_teacher_path(@teacher.id) %>">
   <label>Title</label>
   <input type="text" name="name" value="<%= @teacher.name %>">
   <input type="submit" value="Update">

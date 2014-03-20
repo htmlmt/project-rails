@@ -2,28 +2,28 @@ ProjectRails::Application.routes.draw do
   get "/" => 'pages#home', :as => :home
   
   get "students" => 'students#index', :as => :students
-  get "students/:id" => 'students#show', :as => :student
   get "students/new" => 'students#new', :as => :new_student
+  get "students/:id" => 'students#show', :as => :student
   post "students" => 'students#create', :as => :create_student
   get "students/:id/edit" => 'students#edit', :as => :edit_student
-  put "students/:id" => 'students#update', :as => :update_student
+  post "students/:id" => 'students#update', :as => :update_student
   delete "students/:id" => 'students#delete', :as => :delete_student
 
   get "teachers" => 'teachers#index', :as => :teachers
-  get "teachers/:id" => 'teachers#show', :as => :teacher
   get "teachers/new" => 'teachers#new', :as => :new_teacher
+  get "teachers/:id" => 'teachers#show', :as => :teacher
   post "teachers" => 'teachers#create', :as => :create_teacher
   get "teachers/:id/edit" => 'teachers#edit', :as => :edit_teacher
-  put "teachers/:id" => 'teachers#update', :as => :update_teacher
+  post "teachers/:id" => 'teachers#update', :as => :update_teacher
   delete "teachers/:id" => 'teachers#delete', :as => :delete_teacher
 
-  get "classes" => 'classes#index', :as => :classes
-  get "classes/:id" => 'classes#show', :as => :class
-  get "classes/new" => 'classes#new', :as => :new_class
-  post "classes" => 'classes#create', :as => :create_class
-  get "classes/:id/edit" => 'classes#edit', :as => :edit_class
-  put "classes/:id" => 'classes#update', :as => :update_class
-  delete "classes/:id" => 'classes#delete', :as => :delete_class
+  get "classes" => 'klasses#index', :as => :classes
+  get "classes/new" => 'klasses#new', :as => :new_class
+  get "classes/:id" => 'klasses#show', :as => :class
+  post "classes" => 'klasses#create', :as => :create_class
+  get "classes/:id/edit" => 'klasses#edit', :as => :edit_class
+  post "classes/:id" => 'klasses#update', :as => :update_class
+  delete "classes/:id" => 'klasses#delete', :as => :delete_class
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
